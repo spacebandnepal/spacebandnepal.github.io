@@ -1,0 +1,454 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'fontLexend': ['"Lexend", sans-serif'],
+          },
+          colors: {
+            bodyBg: '#E3E2DF',
+            headerBg: '#FCFBF9',
+            black: '#000000',
+            white: '#ffffff',
+            border: '#707070',
+            green: '#48D34D',
+            darkGreen: '#21A125'
+          }
+        },
+        container: {
+          // padding: '2rem'
+        },
+        backgroundImage: {
+          'heroBanner': "url('src/img/hero-banner.jpeg')",
+          'brandLogo': "url('src/img/logo.png')"
+        },
+         screens: {
+          'sm': '640px',
+          // => @media (min-width: 640px) { ... }
+
+          'md': '768px',
+          // => @media (min-width: 768px) { ... }
+
+          'lg': '1024px',
+          // => @media (min-width: 1024px) { ... }
+
+          'xl': '1280px',
+          // => @media (min-width: 1280px) { ... }
+
+          '2xl': '1280px',
+          // => @media (min-width: 1536px) { ... }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-bodyBg font-fontLexend text-black">
+  <!-- Main Site Header -->
+  <header class="sticky z-10 top-0 bg-[rgba(209,208,204,0.9)] before:bg-[rgba(252,251,249,0.01)] before:blur-2xl before:absolute before:z-0 before:top-0 before:inset-x-0 before:inset-y-0">
+    <div class="container mx-auto px-4">
+      <!-- Mobile Menu -->
+      <div class="md:hidden relative flex justify-center py-2">
+        <button class="navbar-burger flex items-center text-blue-600 p-3 absolute right-4 translate-x-2/4">
+          <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" fill="#000000"></path>
+          </svg>
+        </button>
+        <a href="#" class="block"><img class="w-14" src="src/img/logo.png" title="Band Logo" /></a>
+      </div>
+
+      <div class="navbar-menu bg-bodyBg md:bg-transparent md:block hidden absolute md:relative top-15 md:top-0 inset-x-0">
+        <nav class="flex md:flex-row flex-col justify-center items-center gap-8 relative uppercase bold text-sm font-bold py-4">
+          <a href="#" class="hover:text-white">Home</a>
+          <a href="#" class="hover:text-white">Tour</a>
+          <a href="#" class="hover:text-white">Discography</a>
+          <a href="#" class="hover:text-white">Video</a>       
+          <a href="#" class="w-28 md:block hidden"><img class="w-full" src="src/img/logo.png" title="Band Logo" /></a>
+          <a href="#" class="hover:text-white">Shop</a>
+          <a href="#" class="hover:text-white">Downloads</a>
+          <a href="#" class="hover:text-white">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="bg-heroBanner bg-no-repeat bg-cover bg-bottom">
+    <div class="container mx-auto px-4 min-h-80 md:min-h-96 h-auto md:h-[100vh] relative">
+      <div class="flex justify-between items-center absolute bottom-2 md:bottom-4 left-6 right-6">
+        <nav class="columns-auto">
+          <ul class="flex gap-2 md:gap-4">
+            <li><a href="#"><img class="w-6" src="src/img/ic_insta.svg" title="" /></a></li>
+            <li><a href="#"><img class="w-6" src="src/img/ic_facebook.svg" title="" /></a></li>
+            <li><a href="#"><img class="w-6" src="src/img/ic_youtube.svg" title="" /></a></li>
+          </ul>
+        </nav>
+        <nav class="columns-auto">
+          <ul class="flex gap-2 md:gap-6 items-center">
+            <li><img class="w-6" src="src/img/spotify.png" title="" /></li>
+            <li><img class="w-6" src="src/img/music2.png" title="" /></li>
+            <li><img class="w-14" src="src/img/music.png" title="" /></li>
+            <li><img class="w-16" src="src/img/amazon-music.png" title="" /></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <!-- Upcoming Shows -->
+  <section class="py-20">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-center">
+        <div class="w-full lg:w-9/12">
+          <h2 class="text-2xl md:text-5xl font-bold mb-12">Upcoming Shows</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1">
+            <ul class="flex md:flex-row flex-col md:items-center gap-4 md:gap-0 justify-between text-xl md:text-xl mb-4 pb-4 border-b border-border">
+              <li>Jan 6th</li>
+              <li>
+                <h3>Piano Man Jazz Club</h3>
+                <h6 class="text-sm">malviya Nagar</h6>
+              </li>
+              <li>New Delhi, IND</li>
+              <li><button class="bg-green rounded-lg text-white text-xl font-medium transition hover:bg-darkGreen px-6 py-3">Buy Ticket</button></li>
+            </ul>
+            <ul class="flex md:flex-row flex-col md:items-center gap-4 md:gap-0 justify-between text-xl md:text-2xl mb-4 pb-4 border-b border-border">
+              <li>Jan 6th</li>
+              <li>
+                <h3>Piano Man Jazz Club</h3>
+                <h6 class="text-sm">Safdarjung Enclave</h6>
+              </li>
+              <li>New Delhi, IND</li>
+              <li><button class="bg-green rounded-lg text-white text-xl font-medium transition hover:bg-darkGreen px-6 py-3">Buy Ticket</button></li>
+            </ul>
+            <ul class="flex md:flex-row flex-col md:items-center gap-4 md:gap-0 justify-between text-xl md:text-2xl mb-4 pb-4 border-b border-border">
+              <li>Jan 6th</li>
+              <li>
+                <h3>Piano Man Jazz Club</h3>
+                <h6 class="text-sm">Name here</h6>
+              </li>
+              <li>New Delhi, IND</li>
+              <li><button class="bg-green rounded-lg text-white text-xl font-medium transition hover:bg-darkGreen px-6 py-3">Buy Ticket</button></li>
+            </ul>
+            <ul class="flex md:flex-row flex-col md:items-center gap-4 md:gap-0 justify-between text-xl md:text-2xl mb-4 pb-4 border-b border-border">
+              <li>Jan 6th</li>
+              <li>
+                <h3>Piano Man Jazz Club</h3>
+                <h6 class="text-sm">Name here</h6>
+              </li>
+              <li>New Delhi, IND</li>
+              <li><button class="bg-green rounded-lg text-white text-xl font-medium transition hover:bg-darkGreen px-6 py-3">Buy Ticket</button></li>
+            </ul>
+          </div>
+          <div class="text-center mt-4">
+            <button class="text-lg text-center group">
+              <div class="mb-1">Show more</div>
+              <div class="flex justify-center">
+                <div class="bg-[#EBEAEA] w-10 h-10 rounded-full flex justify-center items-center transition group-hover:bg-black">
+                  <svg width="20.003906" height="10.708984" viewBox="0 0 20.0039 10.709" fill="none">
+                    <path id="Vector 1" d="M0.502014 0.501953L10.002 10.002L19.5019 0.501953" stroke="#707070" stroke-opacity="1.000000" stroke-width="1.000000" stroke-linecap="round"/>
+                  </svg>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Show Banner -->
+      <div class="mt-4"><img class="w-full" src="src/img/show-banner.jpeg" /></div>
+    </div>
+  </section>
+
+  <!-- Discography Section -->
+  <section class="py-20">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-center">
+        <div class="sm:w-full lg:w-9/12">
+          <h2 class="text-2xl md:text-5xl font-bold mb-4 md:mb-12">Discography</h2>
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <figure class="rounded-2xl overflow-hidden mb-2 md:mb-4">
+              <div class="mb-3"><img class="w-full" src="src/img/thum-1.png" /></div>
+              <figcaption class="text-md md:text-xl font-semibold">Eye /I</figcaption>
+            </figure>
+            <figure class="rounded-2xl overflow-hidden mb-2 md:mb-4">
+              <div class="mb-3"><img class="w-full" src="src/img/thum-2.png" /></div>
+              <figcaption class="text-md md:text-xl font-semibold">Kapaas</figcaption>
+            </figure>
+            <figure class="rounded-2xl overflow-hidden mb-2 md:mb-4">
+              <div class="mb-3"><img class="w-full" src="src/img/thum-3.png" /></div>
+              <figcaption class="text-md md:text-xl font-semibold">Sundar Antya <span class="font-normal">(Single)</span></figcaption>
+            </figure>
+            <figure class="rounded-2xl overflow-hidden mb-2 md:mb-4">
+              <div class="mb-3"><img class="w-full" src="src/img/thum-6.png" /></div>
+              <figcaption class="text-md md:text-xl font-semibold">Eye /I</figcaption>
+            </figure>
+            <figure class="rounded-2xl overflow-hidden mb-2 md:mb-4">
+              <div class="mb-3"><img class="w-full" src="src/img/thum-4.png" /></div>
+              <figcaption class="text-md md:text-xl font-semibold">Kapaas</figcaption>
+            </figure>
+            <figure class="rounded-2xl overflow-hidden mb-2 md:mb-4">
+              <div class="mb-3"><img class="w-full" src="src/img/thum-2.png" /></div>
+              <figcaption class="text-md md:text-xl font-semibold">Sundar Antya <span class="font-normal">(Single)</span></figcaption>
+            </figure>
+          </div>
+
+          <div class="text-center mt-4">
+            <button class="text-lg text-center group">
+              <div class="mb-1">Show more</div>
+              <div class="flex justify-center">
+                <div class="bg-[#EBEAEA] w-10 h-10 rounded-full flex justify-center items-center transition group-hover:bg-black">
+                  <svg width="20.003906" height="10.708984" viewBox="0 0 20.0039 10.709" fill="none">
+                    <path id="Vector 1" d="M0.502014 0.501953L10.002 10.002L19.5019 0.501953" stroke="#707070" stroke-opacity="1.000000" stroke-width="1.000000" stroke-linecap="round"/>
+                  </svg>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-4 grid-rows-2 gap-4">
+        <figure class="col-span-2 row-span-2 rounded-2xl overflow-hidden"><img class="w-full" src="src/img/gallery/g-v-img-1.png" /></figure>
+        <figure class="rounded-2xl overflow-hidden"><img class="w-full" src="src/img/gallery/g-thum-1.png" /></figure>
+        <figure class="rounded-2xl overflow-hidden"><img class="w-full" src="src/img/gallery/g-thum-2.png" /></figure>
+        <figure class="col-span-2 rounded-2xl overflow-hidden"><img class="w-full" src="src/img/gallery/g-v-img.png" /></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video -->
+  <section class="py-20">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-center">
+        <div class="sm:w-full lg:w-9/12">
+          <h2 class="text-2xl md:text-5xl font-bold mb-12">Videos</h2>
+          <div class="grid grid-cols-3 grid-rows-3 gap-x-4 gap-y-12">
+              <div class="">
+                <iframe class="w-full h-full aspect-video rounded-2xl overflow-hidden" src="https://www.youtube.com/embed/7he3lkoLY6A?si=WwCbP2gT9bFxQ-U6&amp;start=29"></iframe>
+                <div class="text-lg">Eye / I full album</div>
+              </div>
+              <div class="">
+                <iframe class="w-full h-full aspect-video rounded-2xl overflow-hidden" src="https://www.youtube.com/embed/7he3lkoLY6A?si=WwCbP2gT9bFxQ-U6&amp;start=29"></iframe>
+                <div class="text-lg">Sansaar</div>
+              </div>
+              <div class="">
+                <iframe class="w-full h-full aspect-video rounded-2xl overflow-hidden" src="https://www.youtube.com/embed/7he3lkoLY6A?si=WwCbP2gT9bFxQ-U6&amp;start=29"></iframe>
+                <div class="text-lg">Chahesamma</div>
+              </div>
+              <div class="row-start-2 col-span-2 row-span-2">
+                <iframe class="w-full h-full aspect-video rounded-2xl overflow-hidden" src="https://www.youtube.com/embed/7he3lkoLY6A?si=WwCbP2gT9bFxQ-U6&amp;start=29"></iframe>
+                <div class="text-lg">Kapaas Full Album</div>
+              </div>
+              <div class="col-start-3 row-start-2">
+                <iframe class="w-full h-full aspect-video rounded-2xl overflow-hidden" src="https://www.youtube.com/embed/7he3lkoLY6A?si=WwCbP2gT9bFxQ-U6&amp;start=29"></iframe>
+                <div class="text-lg">Naya Geet</div>
+              </div>
+              <div class="col-start-3 row-start-3">
+                <iframe class="w-full h-full aspect-video rounded-2xl overflow-hidden" src="https://www.youtube.com/embed/7he3lkoLY6A?si=WwCbP2gT9bFxQ-U6&amp;start=29"></iframe>
+                <div class="text-lg">Dreaming</div>
+              </div>
+          </div>
+
+          <div class="text-center mt-16">
+            <button class="text-lg text-center group">
+              <div class="mb-1">Show more</div>
+              <div class="flex justify-center">
+                <div class="bg-[#EBEAEA] w-10 h-10 rounded-full flex justify-center items-center transition group-hover:bg-black">
+                  <svg width="20.003906" height="10.708984" viewBox="0 0 20.0039 10.709" fill="none">
+                    <path id="Vector 1" d="M0.502014 0.501953L10.002 10.002L19.5019 0.501953" stroke="#707070" stroke-opacity="1.000000" stroke-width="1.000000" stroke-linecap="round"/>
+                  </svg>
+                </div>
+              </div>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About us -->
+  <section class="py-20">
+    <div class="container mx-auto px-4">
+      <div class="flex gap-8">
+        <div class="sm:w-full lg:w-5/12">
+          <h2 class="text-5xl font-bold mb-4">About us</h2>
+          <p class="text-md font-light">What do you get when five aspiring musicians come together and start practicing as early as 7 in the morning almost every day planning to create something that sets them apart in the local scene? Well you get Space! Although space existed before the big bang, the band itself was formed in June 2016. Space primarily plays rock music but gathers influence from different genres of music (post rock/ alternative/progressive). The band has garnered a steady, loyal following and has managed to develop a distinct space in the Nepalese music scene and is heralded as one of the original sounding bands. With a number of notable gigs already under their belt, the highlight being opening for THE ARISTOCRATS, they recently completed their tour of North India and are set to hit a few international festivals as well in 2023. They are also a prime example of how home recordings and DIY studio setups have flourished in Nepal with bands now being able to record in a low key relaxed environment. With all of their 9 songs in the debut album “Eye/I” being in English, they have now, in 2022, released 6 new tracks in Nepali as well with their second album “Kapaas”. Their live shows also incorporate custom-made animation screening providing a complete audio/ visual experience for the audience. They are currently working on their third album, 3 music videos and a few studio live sessions. 2023 will see them do a Nepal tour promoting their latest releases.</p>
+        </div>
+        <div class="sm:w-full lg:w-7/12 pt-12">
+          <figure class="w-full"><img class="h-full" src="src/img/about.png"></figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Members -->
+  <section class="mb-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-5xl font-bold mb-4">Members</h2>
+      <div class="grid grid-cols-3 gap-8">
+        <figure>
+          <div class="mb-6"><img class="w-full" src="src/img/about/about5.png" /></div>
+          <figcaption>
+            <div class="flex justify-between items-center mb-1">
+              <h5 class="text-xl font-semibold">Nikita Shrestha</h5>
+              <div class="font-light">Vocal</div>
+            </div>
+            <p class="font-light">Nikita started singing since she was 10 years old. She worked with Riken Maharjan on his solo electronic album named “Space”, which later became the inspiration and namesake for the band. She plays guitar, ukelele, keyboard and sings. She has worked with artists from different genres. Space is her first band.</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <div class="mb-6"><img class="w-full" src="src/img/about/about2.png" /></div>
+          <figcaption>
+            <div class="flex justify-between items-center mb-1">
+              <h5 class="text-xl font-semibold">Nikita Shrestha</h5>
+              <div class="font-light">Vocal</div>
+            </div>
+            <p class="font-light">Nikita started singing since she was 10 years old. She worked with Riken Maharjan on his solo electronic album named “Space”, which later became the inspiration and namesake for the band. She plays guitar, ukelele, keyboard and sings. She has worked with artists from different genres. Space is her first band.</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <div class="mb-6"><img class="w-full" src="src/img/about/about3.png" /></div>
+          <figcaption>
+            <div class="flex justify-between items-center mb-1">
+              <h5 class="text-xl font-semibold">Ritavrat Joshi</h5>
+              <div class="font-light">Bass</div>
+            </div>
+            <p class="font-light">Ritavrat has been active in the music scene since winning Kathmandu’s 6th ICMC band competition in 2009. He has been actively playing in Kamero, a progressive rock/metal band, since 2014 and joined Space in 2018. He also writes the lyrics for Kamero and other rock bands. He is also active with his solo industrial/electronica project named Lawpacks. He has also shared the stage with Ron Bumblefoot Thal.</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <div class="mb-6"><img class="w-full" src="src/img/about/about2.png" /></div>
+          <figcaption>
+            <div class="flex justify-between items-center mb-1">
+              <h5 class="text-xl font-semibold">Nikita Shrestha</h5>
+              <div class="font-light">Vocal</div>
+            </div>
+            <p class="font-light">Nikita started singing since she was 10 years old. She worked with Riken Maharjan on his solo electronic album named “Space”, which later became the inspiration and namesake for the band. She plays guitar, ukelele, keyboard and sings. She has worked with artists from different genres. Space is her first band.</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <div class="mb-6"><img class="w-full" src="src/img/about/about4.png" /></div>
+          <figcaption>
+            <div class="flex justify-between items-center mb-1">
+              <h5 class="text-xl font-semibold">Nir Khadka</h5>
+              <div class="font-light">Guitar</div>
+            </div>
+            <p class="font-light">Nir is an aspiring guitarist. He has played in many bands like Resonance Of Roots, Oceans, Black tea and Inner Circle.</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <div class="mb-6"><img class="w-full" src="src/img/about/team.png" /></div>
+          <!-- <figcaption>
+            <div class="flex justify-between items-center mb-4">
+              <h5 class="text-xl font-semibold">Nikita Shrestha</h5>
+              <div class="font-light">Vocal</div>
+            </div>
+            <p class="font-light">Nikita started singing since she was 10 years old. She worked with Riken Maharjan on his solo electronic album named “Space”, which later became the inspiration and namesake for the band. She plays guitar, ukelele, keyboard and sings. She has worked with artists from different genres. Space is her first band.</p>
+          </figcaption> -->
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white py-16">
+    <div class="container mx-auto px-4">
+      <div class="flex">
+        <div class="w-4/12">
+          <h3 class="text-5xl font-bold">Contact us</h3>
+        </div>
+        <div class="w-4/12">
+          <div class="mb-6">
+            <h5 class="text-xl font-semibold">Mailing Address</h5>
+            <div class="font-light">spacenepalband@gmail.com</div>
+          </div>
+          <div class="mb-6">
+            <h5 class="text-xl font-semibold">Mailing Address</h5>
+            <div class="font-light">spacenepalband@gmail.com</div>
+          </div>
+          <div class="">
+            <h5 class="text-xl font-semibold">Mailing Address</h5>
+            <div class=""><img src="src/img/gofundme.png" /></div>
+          </div>
+        </div>
+        <div class="w-4/12">
+          <h5 class="text-xl font-semibold mb-4">Find us</h5>
+          <ul class="flex gap-4 mb-4">
+            <li><a href="#"><img class="w-6" src="src/img/ic_insta.svg" title="" /></a></li>
+            <li><a href="#"><img class="w-6" src="src/img/ic_facebook.svg" title="" /></a></li>
+            <li><a href="#"><img class="w-6" src="src/img/ic_youtube.svg" title="" /></a></li>
+            <li><img class="w-6" src="src/img/spotify.png" title="" /></li>
+          </ul>
+          <ul class="flex gap-6 items-center">
+            <li><img class="w-6" src="src/img/music2.png" title="" /></li>
+            <li><img class="w-14" src="src/img/music.png" title="" /></li>
+            <li><img class="w-16" src="src/img/amazon-music.png" title="" /></li>
+          </ul>
+        </div>
+        <div class="w-4/12 text-center">
+          <a href="#" class="w-24 inline-block"><img class="w-auto" src="src/img/logo.png" title="Band Logo" /></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript">
+    // Burger menus
+    document.addEventListener('DOMContentLoaded', function() {
+        // open
+        const burger = document.querySelectorAll('.navbar-burger');
+        const menu = document.querySelectorAll('.navbar-menu');
+
+        if (burger.length && menu.length) {
+            for (var i = 0; i < burger.length; i++) {
+                burger[i].addEventListener('click', function() {
+                    for (var j = 0; j < menu.length; j++) {
+                        menu[j].classList.toggle('hidden');
+                    }
+                });
+            }
+        }
+
+        // close
+        const close = document.querySelectorAll('.navbar-close');
+        const backdrop = document.querySelectorAll('.navbar-backdrop');
+
+        if (close.length) {
+            for (var i = 0; i < close.length; i++) {
+                close[i].addEventListener('click', function() {
+                    for (var j = 0; j < menu.length; j++) {
+                        menu[j].classList.toggle('hidden');
+                    }
+                });
+            }
+        }
+
+        if (backdrop.length) {
+            for (var i = 0; i < backdrop.length; i++) {
+                backdrop[i].addEventListener('click', function() {
+                    for (var j = 0; j < menu.length; j++) {
+                        menu[j].classList.toggle('hidden');
+                    }
+                });
+            }
+        }
+    });
+  </script>
+</body>
+</html>
