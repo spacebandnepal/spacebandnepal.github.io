@@ -6,6 +6,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="src/img/favicon.ico">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -56,17 +57,19 @@
   <header class="sticky z-10 top-0 bg-[rgba(209,208,204,0.9)] before:bg-[rgba(252,251,249,0.01)] before:blur-2xl before:absolute before:z-0 before:top-0 before:inset-x-0 before:inset-y-0">
     <div class="container mx-auto px-4">
       <!-- Mobile Menu -->
-      <div class="md:hidden relative flex justify-center py-2">
+      <div class="md:hidden relative z-10 flex justify-center py-2">
         <button class="navbar-burger flex items-center text-blue-600 p-3 absolute right-4 translate-x-2/4">
           <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" fill="#000000"></path>
           </svg>
         </button>
         <a href="#" class="block"><img class="w-14" src="src/img/logo.png" title="Band Logo" /></a>
+        <!-- <div class="navbar-close">Close</div> -->
       </div>
 
-      <div class="navbar-menu bg-bodyBg md:bg-transparent md:block hidden absolute md:relative top-15 md:top-0 inset-x-0">
-        <nav class="flex md:flex-row flex-col justify-center items-center gap-8 relative uppercase bold text-sm font-bold py-4">
+      <div class="navbar-menu bg-[#c8c8c8] md:bg-transparent md:block hidden absolute md:relative top-15 md:top-0 inset-x-0">
+        <div class="navbar-backdrop md:hidden block fixed inset-0 bg-bodyBg opacity-20"></div>
+        <nav class="flex md:flex-row flex-col justify-center items-center gap-6 md:gap-8 relative uppercase bold text-sm font-bold py-4">
           <a href="#" class="hover:text-white">Home</a>
           <a href="#" class="hover:text-white">Tour</a>
           <a href="#" class="hover:text-white">Discography</a>
@@ -81,7 +84,7 @@
   </header>
 
   <!-- Hero Banner -->
-  <section class="bg-heroBanner bg-no-repeat bg-cover bg-bottom">
+  <section class="bg-heroBanner bg-no-repeat bg-cover bg-bottom mb-20">
     <div class="container mx-auto px-4 min-h-80 md:min-h-96 h-auto md:h-[100vh] relative">
       <div class="flex justify-between items-center absolute bottom-2 md:bottom-4 left-6 right-6">
         <nav class="columns-auto">
@@ -104,48 +107,49 @@
   </section>
 
   <!-- Upcoming Shows -->
-  <section class="py-20">
+  <section class="mb-20">
     <div class="container mx-auto px-4">
       <div class="flex justify-center">
         <div class="w-full lg:w-9/12">
-          <h2 class="text-2xl md:text-5xl font-bold mb-12">Upcoming Shows</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1">
-            <ul class="flex md:flex-row flex-col md:items-center gap-4 md:gap-0 justify-between text-xl md:text-xl mb-4 pb-4 border-b border-border">
+          <h2 class="text-3xl md:text-5xl font-bold mb-6 md:mb-12">Upcoming Shows</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 gap-4">
+            <ul class="flex md:flex-row flex-col items-center gap-2 md:gap-0 justify-between text-xl md:text-2xl p-4 md:p-0 md:pb-4 bg-[rgba(255,255,255,0.3)] md:bg-transparent md:border-b border-border md:rounded-none rounded-lg">
               <li>Jan 6th</li>
               <li>
                 <h3>Piano Man Jazz Club</h3>
-                <h6 class="text-sm">malviya Nagar</h6>
+                <h6 class="text-sm text-center md:text-left text-[#555555]">malviya Nagar</h6>
               </li>
               <li>New Delhi, IND</li>
-              <li><button class="bg-green rounded-lg text-white text-xl font-medium transition hover:bg-darkGreen px-6 py-3">Buy Ticket</button></li>
+              <li class="w-full md:w-auto mt-3 md:mt-0"><button class="bg-green w-full md:w-auto rounded-lg text-white text-lg md:text-xl font-medium transition hover:bg-darkGreen px-6 py-3">Buy Ticket</button></li>
             </ul>
-            <ul class="flex md:flex-row flex-col md:items-center gap-4 md:gap-0 justify-between text-xl md:text-2xl mb-4 pb-4 border-b border-border">
+            <ul class="flex md:flex-row flex-col items-center gap-2 md:gap-0 justify-between text-xl md:text-2xl p-4 md:p-0 md:pb-4 bg-[rgba(255,255,255,0.3)] md:bg-transparent md:border-b border-border md:rounded-none rounded-lg">
               <li>Jan 6th</li>
               <li>
                 <h3>Piano Man Jazz Club</h3>
-                <h6 class="text-sm">Safdarjung Enclave</h6>
+                <h6 class="text-sm text-center md:text-left text-[#555555]">malviya Nagar</h6>
               </li>
               <li>New Delhi, IND</li>
-              <li><button class="bg-green rounded-lg text-white text-xl font-medium transition hover:bg-darkGreen px-6 py-3">Buy Ticket</button></li>
+              <li class="w-full md:w-auto mt-3 md:mt-0"><button class="bg-green w-full md:w-auto rounded-lg text-white text-lg md:text-xl font-medium transition hover:bg-darkGreen px-6 py-3">Buy Ticket</button></li>
             </ul>
-            <ul class="flex md:flex-row flex-col md:items-center gap-4 md:gap-0 justify-between text-xl md:text-2xl mb-4 pb-4 border-b border-border">
+            <ul class="flex md:flex-row flex-col items-center gap-2 md:gap-0 justify-between text-xl md:text-2xl p-4 md:p-0 md:pb-4 bg-[rgba(255,255,255,0.3)] md:bg-transparent md:border-b border-border md:rounded-none rounded-lg">
               <li>Jan 6th</li>
               <li>
                 <h3>Piano Man Jazz Club</h3>
-                <h6 class="text-sm">Name here</h6>
+                <h6 class="text-sm text-center md:text-left text-[#555555]">malviya Nagar</h6>
               </li>
               <li>New Delhi, IND</li>
-              <li><button class="bg-green rounded-lg text-white text-xl font-medium transition hover:bg-darkGreen px-6 py-3">Buy Ticket</button></li>
+              <li class="w-full md:w-auto mt-3 md:mt-0"><button class="bg-green w-full md:w-auto rounded-lg text-white text-lg md:text-xl font-medium transition hover:bg-darkGreen px-6 py-3">Buy Ticket</button></li>
             </ul>
-            <ul class="flex md:flex-row flex-col md:items-center gap-4 md:gap-0 justify-between text-xl md:text-2xl mb-4 pb-4 border-b border-border">
+            <ul class="flex md:flex-row flex-col items-center gap-2 md:gap-0 justify-between text-xl md:text-2xl p-4 md:p-0 md:pb-4 bg-[rgba(255,255,255,0.3)] md:bg-transparent md:border-b border-border md:rounded-none rounded-lg">
               <li>Jan 6th</li>
               <li>
                 <h3>Piano Man Jazz Club</h3>
-                <h6 class="text-sm">Name here</h6>
+                <h6 class="text-sm text-center md:text-left text-[#555555]">malviya Nagar</h6>
               </li>
               <li>New Delhi, IND</li>
-              <li><button class="bg-green rounded-lg text-white text-xl font-medium transition hover:bg-darkGreen px-6 py-3">Buy Ticket</button></li>
+              <li class="w-full md:w-auto mt-3 md:mt-0"><button class="bg-green w-full md:w-auto rounded-lg text-white text-lg md:text-xl font-medium transition hover:bg-darkGreen px-6 py-3">Buy Ticket</button></li>
             </ul>
+            
           </div>
           <div class="text-center mt-4">
             <button class="text-lg text-center group">
@@ -163,16 +167,16 @@
       </div>
 
       <!-- Show Banner -->
-      <div class="mt-4"><img class="w-full" src="src/img/show-banner.jpeg" /></div>
+      <div class="mt-12"><img class="w-full" src="src/img/show-banner.jpeg" /></div>
     </div>
   </section>
 
   <!-- Discography Section -->
-  <section class="py-20">
+  <section class="mb-20">
     <div class="container mx-auto px-4">
       <div class="flex justify-center">
-        <div class="sm:w-full lg:w-9/12">
-          <h2 class="text-2xl md:text-5xl font-bold mb-4 md:mb-12">Discography</h2>
+        <div class="w-full lg:w-9/12">
+          <h2 class="text-3xl md:text-5xl font-bold mb-4 md:mb-12">Discography</h2>
           <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
             <figure class="rounded-2xl overflow-hidden mb-2 md:mb-4">
               <div class="mb-3"><img class="w-full" src="src/img/thum-1.png" /></div>
@@ -220,9 +224,9 @@
   </section>
 
   <!-- Gallery -->
-  <section class="">
+  <section class="mb-20 md:mb-4">
     <div class="container mx-auto px-4">
-      <div class="grid grid-cols-4 grid-rows-2 gap-4">
+      <div class="grid grid-cols-2 md:grid-cols-4 grid-row-4 md:grid-rows-2 gap-4">
         <figure class="col-span-2 row-span-2 rounded-2xl overflow-hidden"><img class="w-full" src="src/img/gallery/g-v-img-1.png" /></figure>
         <figure class="rounded-2xl overflow-hidden"><img class="w-full" src="src/img/gallery/g-thum-1.png" /></figure>
         <figure class="rounded-2xl overflow-hidden"><img class="w-full" src="src/img/gallery/g-thum-2.png" /></figure>
@@ -232,12 +236,12 @@
   </section>
 
   <!-- Video -->
-  <section class="py-20">
+  <section class="mb-20">
     <div class="container mx-auto px-4">
       <div class="flex justify-center">
-        <div class="sm:w-full lg:w-9/12">
-          <h2 class="text-2xl md:text-5xl font-bold mb-12">Videos</h2>
-          <div class="grid grid-cols-3 grid-rows-3 gap-x-4 gap-y-12">
+        <div class="w-full lg:w-9/12">
+          <h2 class="text-3xl md:text-5xl font-bold mb-6 md:mb-12">Videos</h2>
+          <div class="grid grid-cols-2 md:grid-cols-3 grid-rows-3 gap-x-4 gap-y-12">
               <div class="">
                 <iframe class="w-full h-full aspect-video rounded-2xl overflow-hidden" src="https://www.youtube.com/embed/7he3lkoLY6A?si=WwCbP2gT9bFxQ-U6&amp;start=29"></iframe>
                 <div class="text-lg">Eye / I full album</div>
@@ -250,15 +254,15 @@
                 <iframe class="w-full h-full aspect-video rounded-2xl overflow-hidden" src="https://www.youtube.com/embed/7he3lkoLY6A?si=WwCbP2gT9bFxQ-U6&amp;start=29"></iframe>
                 <div class="text-lg">Chahesamma</div>
               </div>
-              <div class="row-start-2 col-span-2 row-span-2">
+              <div class="row-start-2 col-span-1 md:col-span-2 row-span-1 md:row-span-2">
                 <iframe class="w-full h-full aspect-video rounded-2xl overflow-hidden" src="https://www.youtube.com/embed/7he3lkoLY6A?si=WwCbP2gT9bFxQ-U6&amp;start=29"></iframe>
                 <div class="text-lg">Kapaas Full Album</div>
               </div>
-              <div class="col-start-3 row-start-2">
+              <div class="col-start-1 md:col-start-3 row-start-3 md:row-start-2">
                 <iframe class="w-full h-full aspect-video rounded-2xl overflow-hidden" src="https://www.youtube.com/embed/7he3lkoLY6A?si=WwCbP2gT9bFxQ-U6&amp;start=29"></iframe>
                 <div class="text-lg">Naya Geet</div>
               </div>
-              <div class="col-start-3 row-start-3">
+              <div class="col-start-2 md:col-start-3 row-start-3">
                 <iframe class="w-full h-full aspect-video rounded-2xl overflow-hidden" src="https://www.youtube.com/embed/7he3lkoLY6A?si=WwCbP2gT9bFxQ-U6&amp;start=29"></iframe>
                 <div class="text-lg">Dreaming</div>
               </div>
@@ -283,14 +287,14 @@
   </section>
 
   <!-- About us -->
-  <section class="py-20">
+  <section class="mb-20">
     <div class="container mx-auto px-4">
-      <div class="flex gap-8">
-        <div class="sm:w-full lg:w-5/12">
-          <h2 class="text-5xl font-bold mb-4">About us</h2>
+      <div class="flex flex-col md:flex-row gap-4 md:gap-8">
+        <div class="w-full lg:w-5/12">
+          <h2 class="text-3xl md:text-5xl font-bold mb-4">About us</h2>
           <p class="text-md font-light">What do you get when five aspiring musicians come together and start practicing as early as 7 in the morning almost every day planning to create something that sets them apart in the local scene? Well you get Space! Although space existed before the big bang, the band itself was formed in June 2016. Space primarily plays rock music but gathers influence from different genres of music (post rock/ alternative/progressive). The band has garnered a steady, loyal following and has managed to develop a distinct space in the Nepalese music scene and is heralded as one of the original sounding bands. With a number of notable gigs already under their belt, the highlight being opening for THE ARISTOCRATS, they recently completed their tour of North India and are set to hit a few international festivals as well in 2023. They are also a prime example of how home recordings and DIY studio setups have flourished in Nepal with bands now being able to record in a low key relaxed environment. With all of their 9 songs in the debut album “Eye/I” being in English, they have now, in 2022, released 6 new tracks in Nepali as well with their second album “Kapaas”. Their live shows also incorporate custom-made animation screening providing a complete audio/ visual experience for the audience. They are currently working on their third album, 3 music videos and a few studio live sessions. 2023 will see them do a Nepal tour promoting their latest releases.</p>
         </div>
-        <div class="sm:w-full lg:w-7/12 pt-12">
+        <div class="w-full lg:w-7/12 pt-12">
           <figure class="w-full"><img class="h-full" src="src/img/about.png"></figure>
         </div>
       </div>
@@ -300,12 +304,12 @@
   <!-- Members -->
   <section class="mb-16">
     <div class="container mx-auto px-4">
-      <h2 class="text-5xl font-bold mb-4">Members</h2>
-      <div class="grid grid-cols-3 gap-8">
+      <h2 class="text-3xl md:text-5xl font-bold mb-4">Members</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         <figure>
-          <div class="mb-6"><img class="w-full" src="src/img/about/about5.png" /></div>
+          <div class="mb-1 md:mb-6"><img class="w-full" src="src/img/about/about5.png" /></div>
           <figcaption>
-            <div class="flex justify-between items-center mb-1">
+            <div class="flex justify-between items-center md:mb-1">
               <h5 class="text-xl font-semibold">Nikita Shrestha</h5>
               <div class="font-light">Vocal</div>
             </div>
@@ -313,9 +317,9 @@
           </figcaption>
         </figure>
         <figure>
-          <div class="mb-6"><img class="w-full" src="src/img/about/about2.png" /></div>
+          <div class="mb-1 md:mb-6"><img class="w-full" src="src/img/about/about2.png" /></div>
           <figcaption>
-            <div class="flex justify-between items-center mb-1">
+            <div class="flex justify-between items-center md:mb-1">
               <h5 class="text-xl font-semibold">Nikita Shrestha</h5>
               <div class="font-light">Vocal</div>
             </div>
@@ -323,9 +327,9 @@
           </figcaption>
         </figure>
         <figure>
-          <div class="mb-6"><img class="w-full" src="src/img/about/about3.png" /></div>
+          <div class="mb-1 md:mb-6"><img class="w-full" src="src/img/about/about3.png" /></div>
           <figcaption>
-            <div class="flex justify-between items-center mb-1">
+            <div class="flex justify-between items-center md:mb-1">
               <h5 class="text-xl font-semibold">Ritavrat Joshi</h5>
               <div class="font-light">Bass</div>
             </div>
@@ -333,9 +337,9 @@
           </figcaption>
         </figure>
         <figure>
-          <div class="mb-6"><img class="w-full" src="src/img/about/about2.png" /></div>
+          <div class="mb-1 md:mb-6"><img class="w-full" src="src/img/about/about2.png" /></div>
           <figcaption>
-            <div class="flex justify-between items-center mb-1">
+            <div class="flex justify-between items-center md:mb-1">
               <h5 class="text-xl font-semibold">Nikita Shrestha</h5>
               <div class="font-light">Vocal</div>
             </div>
@@ -343,9 +347,9 @@
           </figcaption>
         </figure>
         <figure>
-          <div class="mb-6"><img class="w-full" src="src/img/about/about4.png" /></div>
+          <div class="mb-1 md:mb-6"><img class="w-full" src="src/img/about/about4.png" /></div>
           <figcaption>
-            <div class="flex justify-between items-center mb-1">
+            <div class="flex justify-between items-center md:mb-1">
               <h5 class="text-xl font-semibold">Nir Khadka</h5>
               <div class="font-light">Guitar</div>
             </div>
@@ -353,7 +357,7 @@
           </figcaption>
         </figure>
         <figure>
-          <div class="mb-6"><img class="w-full" src="src/img/about/team.png" /></div>
+          <div class="mb-1 md:mb-6"><img class="w-full" src="src/img/about/team.png" /></div>
           <!-- <figcaption>
             <div class="flex justify-between items-center mb-4">
               <h5 class="text-xl font-semibold">Nikita Shrestha</h5>
@@ -367,41 +371,41 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-white py-16">
+  <footer class="bg-white py-12 md:py-16">
     <div class="container mx-auto px-4">
-      <div class="flex">
-        <div class="w-4/12">
-          <h3 class="text-5xl font-bold">Contact us</h3>
+      <div class="flex gap-6 md:gap-4 lg:flex-nowrap flex-wrap text-center md:text-left justify-center md:justify-between">
+        <div class="w-6/12 md:w-4/12">
+          <h3 class="text-3xl md:text-5xl font-bold w-full md:w-max text-center md:text-left">Contact us</h3>
         </div>
-        <div class="w-4/12">
+        <div class="w-6/12 md:w-4/12">
           <div class="mb-6">
             <h5 class="text-xl font-semibold">Mailing Address</h5>
             <div class="font-light">spacenepalband@gmail.com</div>
           </div>
           <div class="mb-6">
-            <h5 class="text-xl font-semibold">Mailing Address</h5>
-            <div class="font-light">spacenepalband@gmail.com</div>
+            <h5 class="text-xl font-semibold">Contact Address</h5>
+            <div class="font-light">+977-9815212542</div>
           </div>
-          <div class="">
-            <h5 class="text-xl font-semibold">Mailing Address</h5>
+          <div class="inline-block md:block">
+            <h5 class="text-xl font-semibold mb-1">Support us</h5>
             <div class=""><img src="src/img/gofundme.png" /></div>
           </div>
         </div>
-        <div class="w-4/12">
+        <div class="w-6/12 md:w-4/12">
           <h5 class="text-xl font-semibold mb-4">Find us</h5>
-          <ul class="flex gap-4 mb-4">
+          <ul class="flex gap-4 mb-4 justify-center md:justify-start">
             <li><a href="#"><img class="w-6" src="src/img/ic_insta.svg" title="" /></a></li>
             <li><a href="#"><img class="w-6" src="src/img/ic_facebook.svg" title="" /></a></li>
             <li><a href="#"><img class="w-6" src="src/img/ic_youtube.svg" title="" /></a></li>
             <li><img class="w-6" src="src/img/spotify.png" title="" /></li>
           </ul>
-          <ul class="flex gap-6 items-center">
+          <ul class="flex gap-6 items-center justify-center md:justify-start">
             <li><img class="w-6" src="src/img/music2.png" title="" /></li>
             <li><img class="w-14" src="src/img/music.png" title="" /></li>
             <li><img class="w-16" src="src/img/amazon-music.png" title="" /></li>
           </ul>
         </div>
-        <div class="w-4/12 text-center">
+        <div class="w-6/12 md:w-4/12 text-center">
           <a href="#" class="w-24 inline-block"><img class="w-auto" src="src/img/logo.png" title="Band Logo" /></a>
         </div>
       </div>
