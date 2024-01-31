@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html style="scroll-behavior: smooth;">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -52,7 +52,7 @@
     }
   </script>
 </head>
-<body class="bg-bodyBg font-fontLexend text-black">
+<body class="bg-bodyBg font-fontLexend text-black scroll-smooth">
   <!-- Main Site Header -->
   <header class="sticky z-10 top-0 bg-[rgba(209,208,204,0.9)] before:bg-[rgba(252,251,249,0.01)] before:blur-2xl before:absolute before:z-0 before:top-0 before:inset-x-0 before:inset-y-0">
     <div class="container mx-auto px-4">
@@ -70,14 +70,15 @@
       <div class="navbar-menu bg-[#c8c8c8] md:bg-transparent md:block hidden absolute md:relative top-15 md:top-0 inset-x-0">
         <div class="navbar-backdrop md:hidden block fixed inset-0 bg-bodyBg opacity-20"></div>
         <nav class="flex md:flex-row flex-col justify-center items-center gap-6 md:gap-8 relative uppercase bold text-sm font-bold py-4">
-          <a href="#" class="hover:text-white">Home</a>
-          <a href="#" class="hover:text-white">Tour</a>
-          <a href="#" class="hover:text-white">Discography</a>
-          <a href="#" class="hover:text-white">Video</a>       
+          <a href="index.html" class="hover:text-white">Home</a>
+          <a href="#upcoming-shows" class="hover:text-white">Tour</a>
+          <a href="#discography" class="hover:text-white">Discography</a>
+          <a href="#videos" class="hover:text-white">Video</a>
           <a href="#" class="w-28 md:block hidden"><img class="w-full" src="src/img/logo.png" title="Band Logo" /></a>
           <a href="#" class="hover:text-white">Shop</a>
           <a href="#" class="hover:text-white">Downloads</a>
-          <a href="#" class="hover:text-white">Contact</a>
+          <a href="#contact-us" class="hover:text-white">Contact</a>
+          <a href="#about-us" class="hover:text-white">About Us</a>
         </nav>
       </div>
     </div>
@@ -89,14 +90,14 @@
       <div class="flex justify-between items-center absolute bottom-2 md:bottom-4 left-6 right-6">
         <nav class="columns-auto">
           <ul class="flex gap-2 md:gap-4">
-            <li><a href="#"><img class="w-6" src="src/img/ic_insta.svg" title="" /></a></li>
-            <li><a href="#"><img class="w-6" src="src/img/ic_facebook.svg" title="" /></a></li>
-            <li><a href="#"><img class="w-6" src="src/img/ic_youtube.svg" title="" /></a></li>
+            <li><a href="https://instagram.com/space.nepal" target="_blank"><img class="w-6" src="src/img/ic_insta.svg" title="" /></a></li>
+            <li><a href="https://www.facebook.com/space.np/" target="_blank"><img class="w-6" src="src/img/ic_facebook.svg" title="" /></a></li>
+            <li><a href="https://www.youtube.com/@Spacebandnepal" target="_blank"><img class="w-6" src="src/img/ic_youtube.svg" title="" /></a></li>
           </ul>
         </nav>
         <nav class="columns-auto">
           <ul class="flex gap-2 md:gap-6 items-center">
-            <li><img class="w-6" src="src/img/spotify.png" title="" /></li>
+            <li><a href="https://open.spotify.com/artist/3yZZsOPxqRjMZnw1ET2q62?si=nOMSkiZzSc6RrfvM_5IRug&nd=1&dlsi=7fcb02b1b70345c7" target="_blank"><img class="w-6" src="src/img/spotify.png" title="" /></a></li>
             <li><img class="w-6" src="src/img/music2.png" title="" /></li>
             <li><img class="w-14" src="src/img/music.png" title="" /></li>
             <li><img class="w-16" src="src/img/amazon-music.png" title="" /></li>
@@ -107,7 +108,7 @@
   </section>
 
   <!-- Upcoming Shows -->
-  <section class="mb-20">
+  <section class="mb-20" id="upcoming-shows">
     <div class="container mx-auto px-4">
       <div class="flex justify-center">
         <div class="w-full lg:w-9/12">
@@ -172,7 +173,7 @@
   </section>
 
   <!-- Discography Section -->
-  <section class="mb-20">
+  <section class="mb-20" id="discography">
     <div class="container mx-auto px-4">
       <div class="flex justify-center">
         <div class="w-full lg:w-9/12">
@@ -224,7 +225,7 @@
   </section>
 
   <!-- Gallery -->
-  <section class="mb-20 md:mb-4">
+  <section class="mb-20 md:mb-4" id="gallery">
     <div class="container mx-auto px-4">
       <div class="grid grid-cols-2 md:grid-cols-4 grid-row-4 md:grid-rows-2 gap-4">
         <figure class="col-span-2 row-span-2 rounded-2xl overflow-hidden"><img class="w-full" src="src/img/gallery/g-v-img-1.png" /></figure>
@@ -236,34 +237,34 @@
   </section>
 
   <!-- Video -->
-  <section class="mb-20">
+  <section class="mb-20" id="videos">
     <div class="container mx-auto px-4">
       <div class="flex justify-center">
         <div class="w-full lg:w-9/12">
           <h2 class="text-3xl md:text-5xl font-bold mb-6 md:mb-12">Videos</h2>
           <div class="grid grid-cols-2 md:grid-cols-3 grid-rows-3 gap-x-4 gap-y-12">
               <div class="">
-                <iframe class="w-full h-full aspect-video rounded-2xl overflow-hidden" src="https://www.youtube.com/embed/7he3lkoLY6A?si=WwCbP2gT9bFxQ-U6&amp;start=29"></iframe>
+                <iframe class="w-full h-full aspect-video rounded-2xl overflow-hidden" src="https://www.youtube.com/embed/nj_VPWoo6vE?si=dEQ26TnpZ4ErHn7i"></iframe>
                 <div class="text-lg">Eye / I full album</div>
               </div>
               <div class="">
-                <iframe class="w-full h-full aspect-video rounded-2xl overflow-hidden" src="https://www.youtube.com/embed/7he3lkoLY6A?si=WwCbP2gT9bFxQ-U6&amp;start=29"></iframe>
+                <iframe class="w-full h-full aspect-video rounded-2xl overflow-hidden" src="https://www.youtube.com/embed/-L2qALjEZsM?si=47uGZ1SRE9_4ZX6i"></iframe>
                 <div class="text-lg">Sansaar</div>
               </div>
               <div class="">
-                <iframe class="w-full h-full aspect-video rounded-2xl overflow-hidden" src="https://www.youtube.com/embed/7he3lkoLY6A?si=WwCbP2gT9bFxQ-U6&amp;start=29"></iframe>
+                <iframe class="w-full h-full aspect-video rounded-2xl overflow-hidden" src="https://www.youtube.com/embed/SRBOKoqGHA8?si=RJ4Vpsv_MU64w7lp"></iframe>
                 <div class="text-lg">Chahesamma</div>
               </div>
               <div class="row-start-2 col-span-1 md:col-span-2 row-span-1 md:row-span-2">
-                <iframe class="w-full h-full aspect-video rounded-2xl overflow-hidden" src="https://www.youtube.com/embed/7he3lkoLY6A?si=WwCbP2gT9bFxQ-U6&amp;start=29"></iframe>
+                <iframe class="w-full h-full aspect-video rounded-2xl overflow-hidden" src="https://www.youtube.com/embed/OwZwwF84Yjc?si=YElsaI106AAMiaYY"></iframe>
                 <div class="text-lg">Kapaas Full Album</div>
               </div>
               <div class="col-start-1 md:col-start-3 row-start-3 md:row-start-2">
-                <iframe class="w-full h-full aspect-video rounded-2xl overflow-hidden" src="https://www.youtube.com/embed/7he3lkoLY6A?si=WwCbP2gT9bFxQ-U6&amp;start=29"></iframe>
-                <div class="text-lg">Naya Geet</div>
+                <iframe class="w-full h-full aspect-video rounded-2xl overflow-hidden" src="https://www.youtube.com/embed/Dt5jmibLYOg?si=f7WQ21PHA873kaJY"></iframe>
+                <div class="text-lg">Maya</div>
               </div>
               <div class="col-start-2 md:col-start-3 row-start-3">
-                <iframe class="w-full h-full aspect-video rounded-2xl overflow-hidden" src="https://www.youtube.com/embed/7he3lkoLY6A?si=WwCbP2gT9bFxQ-U6&amp;start=29"></iframe>
+                <iframe class="w-full h-full aspect-video rounded-2xl overflow-hidden" src="https://www.youtube.com/embed/q2NE5ZPRASA?si=NcCYEoNlIeQGlCOl""></iframe>
                 <div class="text-lg">Dreaming</div>
               </div>
           </div>
@@ -287,7 +288,7 @@
   </section>
 
   <!-- About us -->
-  <section class="mb-20">
+  <section class="mb-20" id="about-us">
     <div class="container mx-auto px-4">
       <div class="flex flex-col md:flex-row gap-4 md:gap-8">
         <div class="w-full lg:w-5/12">
@@ -302,12 +303,12 @@
   </section>
 
   <!-- Members -->
-  <section class="mb-16">
+  <section class="mb-16" id="members">
     <div class="container mx-auto px-4">
       <h2 class="text-3xl md:text-5xl font-bold mb-4">Members</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         <figure>
-          <div class="mb-1 md:mb-6"><img class="w-full" src="src/img/about/about5.png" /></div>
+          <div class="mb-1 md:mb-6"><img class="w-full" src="src/img/about/nikita.png" /></div>
           <figcaption>
             <div class="flex justify-between items-center md:mb-1">
               <h5 class="text-xl font-semibold">Nikita Shrestha</h5>
@@ -317,17 +318,7 @@
           </figcaption>
         </figure>
         <figure>
-          <div class="mb-1 md:mb-6"><img class="w-full" src="src/img/about/about2.png" /></div>
-          <figcaption>
-            <div class="flex justify-between items-center md:mb-1">
-              <h5 class="text-xl font-semibold">Nikita Shrestha</h5>
-              <div class="font-light">Vocal</div>
-            </div>
-            <p class="font-light">Nikita started singing since she was 10 years old. She worked with Riken Maharjan on his solo electronic album named “Space”, which later became the inspiration and namesake for the band. She plays guitar, ukelele, keyboard and sings. She has worked with artists from different genres. Space is her first band.</p>
-          </figcaption>
-        </figure>
-        <figure>
-          <div class="mb-1 md:mb-6"><img class="w-full" src="src/img/about/about3.png" /></div>
+          <div class="mb-1 md:mb-6"><img class="w-full" src="src/img/about/ritavrat.png" /></div>
           <figcaption>
             <div class="flex justify-between items-center md:mb-1">
               <h5 class="text-xl font-semibold">Ritavrat Joshi</h5>
@@ -337,23 +328,43 @@
           </figcaption>
         </figure>
         <figure>
-          <div class="mb-1 md:mb-6"><img class="w-full" src="src/img/about/about2.png" /></div>
-          <figcaption>
-            <div class="flex justify-between items-center md:mb-1">
-              <h5 class="text-xl font-semibold">Nikita Shrestha</h5>
-              <div class="font-light">Vocal</div>
-            </div>
-            <p class="font-light">Nikita started singing since she was 10 years old. She worked with Riken Maharjan on his solo electronic album named “Space”, which later became the inspiration and namesake for the band. She plays guitar, ukelele, keyboard and sings. She has worked with artists from different genres. Space is her first band.</p>
-          </figcaption>
-        </figure>
-        <figure>
-          <div class="mb-1 md:mb-6"><img class="w-full" src="src/img/about/about4.png" /></div>
+          <div class="mb-1 md:mb-6"><img class="w-full" src="src/img/about/nir.png" /></div>
           <figcaption>
             <div class="flex justify-between items-center md:mb-1">
               <h5 class="text-xl font-semibold">Nir Khadka</h5>
               <div class="font-light">Guitar</div>
             </div>
             <p class="font-light">Nir is an aspiring guitarist. He has played in many bands like Resonance Of Roots, Oceans, Black tea and Inner Circle.</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <div class="mb-1 md:mb-6"><img class="w-full" src="src/img/about/riken.png" /></div>
+          <figcaption>
+            <div class="flex justify-between items-center md:mb-1">
+              <h5 class="text-xl font-semibold">Riken Maharjan</h5>
+              <div class="font-light">Guitar</div>
+            </div>
+            <p class="font-light">Riken is a multi-hyphenated individual. Riken has been working as
+a music producer for over eight years. With a degree in
+ethnomusicology from Kathmandu University, Riken is a working
+audio professional. He started out playing metal and was later
+attracted to electronic music. After joining Kathmandu University's</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <div class="mb-1 md:mb-6"><img class="w-full" src="src/img/about/bikesh.png" /></div>
+          <figcaption>
+            <div class="flex justify-between items-center md:mb-1">
+              <h5 class="text-xl font-semibold">Bikesh Bajra</h5>
+              <div class="font-light">Drum</div>
+            </div>
+            <p class="font-light">Bikesh Bozra is a recordist and arranger at Master Bajra Creation
+Records (Kathmandu). He has been working at the studio as drum
+programmer since 2013 and has been playing as a session artist for
+various musicians. He is involved with other bands and plays a
+variety of instruments: Elbow Room (drums), Ma (nagara),
+Fragments (drum technician). Besides music, he is also a freelance
+photographer and has worked as an assistant cinematographer.</p>
           </figcaption>
         </figure>
         <figure>
@@ -371,7 +382,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-white py-12 md:py-16">
+  <footer class="bg-white py-12 md:py-16" id="contact-us">
     <div class="container mx-auto px-4">
       <div class="flex gap-6 md:gap-4 lg:flex-nowrap flex-wrap text-center md:text-left justify-center md:justify-between">
         <div class="w-6/12 md:w-4/12">
@@ -394,10 +405,10 @@
         <div class="w-6/12 md:w-4/12">
           <h5 class="text-xl font-semibold mb-4">Find us</h5>
           <ul class="flex gap-4 mb-4 justify-center md:justify-start">
-            <li><a href="#"><img class="w-6" src="src/img/ic_insta.svg" title="" /></a></li>
-            <li><a href="#"><img class="w-6" src="src/img/ic_facebook.svg" title="" /></a></li>
-            <li><a href="#"><img class="w-6" src="src/img/ic_youtube.svg" title="" /></a></li>
-            <li><img class="w-6" src="src/img/spotify.png" title="" /></li>
+            <li><a href="https://instagram.com/space.nepal" target="_blank"><img class="w-6" src="src/img/ic_insta.svg" title="" /></a></li>
+            <li><a href="https://www.facebook.com/space.np/" target="_blank"><img class="w-6" src="src/img/ic_facebook.svg" title="" /></a></li>
+            <li><a href="https://www.youtube.com/@Spacebandnepal" target="_blank"><img class="w-6" src="src/img/ic_youtube.svg" title="" /></a></li>
+            <li><a href="https://open.spotify.com/artist/3yZZsOPxqRjMZnw1ET2q62?si=nOMSkiZzSc6RrfvM_5IRug&nd=1&dlsi=7fcb02b1b70345c7" target="_blank"><img class="w-6" src="src/img/spotify.png" title="" /></a></li>
           </ul>
           <ul class="flex gap-6 items-center justify-center md:justify-start">
             <li><img class="w-6" src="src/img/music2.png" title="" /></li>
