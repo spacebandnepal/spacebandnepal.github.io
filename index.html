@@ -54,7 +54,7 @@
 </head>
 <body class="bg-bodyBg font-fontLexend text-black scroll-smooth">
   <!-- Main Site Header -->
-  <header class="sticky z-10 top-0 bg-[rgba(209,208,204,0.9)] before:bg-[rgba(252,251,249,0.01)] before:blur-2xl before:absolute before:z-0 before:top-0 before:inset-x-0 before:inset-y-0">
+  <header class="sticky z-10 top-0 bg-[rgba(209,208,204,0.1)] before:bg-[rgba(252,251,249,0.01)]  backdrop-filter backdrop-blur-lg before:absolute before:z-0 before:top-0 before:inset-x-0 before:inset-y-0">
     <div class="container mx-auto px-4">
       <!-- Mobile Menu -->
       <div class="md:hidden relative z-10 flex justify-center py-2">
@@ -67,7 +67,7 @@
         <!-- <div class="navbar-close">Close</div> -->
       </div>
 
-      <div class="navbar-menu bg-[#c8c8c8] md:bg-transparent md:block hidden absolute md:relative top-15 md:top-0 inset-x-0">
+      <div class="navbar-menu bg-[#c8c8c8] sm:bg-[rgba(209,208,204,0.1)] sm:before:bg-[rgba(252,251,249,0.01)] md:block hidden absolute md:relative top-15 md:top-0 inset-x-0">
         <div class="navbar-backdrop md:hidden block fixed inset-0 bg-bodyBg opacity-20"></div>
         <nav class="flex md:flex-row flex-col justify-center items-center gap-6 md:gap-8 relative uppercase bold text-sm font-bold py-4">
           <a href="index.html" class="hover:text-white">Home</a>
@@ -85,9 +85,9 @@
   </header>
 
   <!-- Hero Banner -->
-  <section class="bg-heroBanner bg-no-repeat bg-cover bg-bottom mb-20">
-    <div class="container mx-auto px-4 min-h-80 md:min-h-96 h-auto md:h-[100vh] relative">
-      <div class="flex justify-between items-center absolute bottom-2 md:bottom-4 left-6 right-6">
+  <section class="bg-heroBanner bg-no-repeat bg-cover bg-bottom mb-20 mx-auto px-4 min-h-80 md:min-h-96 h-auto md:h-[100vh] relative -mt-28">
+    <div class="container ">
+      <div class="flex justify-between items-center absolute -bottom-2 md:bottom-4 left-6 right-6">
         <nav class="columns-auto">
           <ul class="flex gap-2 md:gap-4">
             <li><a href="https://instagram.com/space.nepal" target="_blank"><img class="w-6" src="src/img/ic_insta.svg" title="" /></a></li>
